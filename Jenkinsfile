@@ -13,7 +13,7 @@ pipeline{
         stage('Deploy frontend services to kubernetes cluster'){
             steps{
                 sh "kubectl apply -f frontend.yaml"
-                sh "kubectl get svc -w"
+                sh "sleep 50"
                 sh "kubectl get svc frontend"
                 }     
         }
