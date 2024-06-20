@@ -33,6 +33,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: htrvolker/python-backend:letters
+        image: htrvolker/python-backend:numbers
         ports:
         - containerPort: 5001
